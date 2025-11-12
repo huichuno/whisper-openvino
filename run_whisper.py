@@ -1,16 +1,24 @@
 import openvino_genai
 import librosa
 import time
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+model_id = os.getenv('MODEL_ID')
+model_dir = os.getenv('MODEL_DIR')
+out_dir = os.path.join(model_dir, model_id)
 
 def read_wav(filepath):
     raw_speech, samplerate = librosa.load(filepath, sr=16000)
     return raw_speech.tolist()
 
-model_dir = "models/whisper-large-v3"
+# model_dir = "models/whisper-large-v3"
 
-pipe_cpu = openvino_genai.WhisperPipeline(model_dir, "CPU")
-pipe_gpu = openvino_genai.WhisperPipeline(model_dir, "GPU")
-pipe_auto = openvino_genai.WhisperPipeline(model_dir, "AUTO")
+pipe_cpu = openvino_genai.WhisperPipeline(out_dir, "CPU")
+pipe_gpu = openvino_genai.WhisperPipeline(out_dir, "GPU")
+pipe_auto = openvino_genai.WhisperPipeline(out_dir, "AUTO")
 
 raw_speech = read_wav('audio/how_r_u.wav')
 
