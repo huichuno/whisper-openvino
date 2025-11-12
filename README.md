@@ -27,7 +27,7 @@ uv sync
 uv run .\export_whisper.py
 
 # check out 'models\' folder for exported models
-# update configuration in *.env* file as needed
+# update configuration in '.env' file as needed
 ```
 
 ### Run exported Whisper model
