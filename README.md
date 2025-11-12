@@ -3,14 +3,14 @@ This example showcases how to export and inference of speech recognition Whisper
 
 ## Prerequisites
 * git - distributed version control system
-    * [Windows](https://git-scm.com/install/windows)
+    * [Windows](https://git-scm.com/install/windows) (validated)
     * [Linux](https://git-scm.com/install/linux)
 * uv - fast python package manager
-    * [Windows](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_2)
+    * [Windows](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_2) (validated)
     * [Linux](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
 
 ## Supported Hardware
-* Intel® Core™ Ultra Processors (Series 2)
+* Intel® Core™ Ultra Processors (Series 2) (validated)
 
 ## Getting Started
 ```sh
