@@ -14,13 +14,13 @@ def read_wav(filepath):
     raw_speech, samplerate = librosa.load(filepath, sr=16000)
     return raw_speech.tolist()
 
-# model_dir = "models/whisper-large-v3"
-
 pipe_cpu = openvino_genai.WhisperPipeline(out_dir, "CPU")
 pipe_gpu = openvino_genai.WhisperPipeline(out_dir, "GPU")
 pipe_auto = openvino_genai.WhisperPipeline(out_dir, "AUTO")
 
-raw_speech = read_wav('audio/how_r_u.wav')
+raw_speech = read_wav('audio/courtroom.wav')
+
+print("Transcribing using model from %s\n" % out_dir)
 
 # CPU
 start = time.time()
