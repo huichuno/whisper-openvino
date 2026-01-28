@@ -18,7 +18,7 @@ pipe_cpu = openvino_genai.WhisperPipeline(out_dir, "CPU")
 pipe_gpu = openvino_genai.WhisperPipeline(out_dir, "GPU")
 pipe_auto = openvino_genai.WhisperPipeline(out_dir, "AUTO")
 
-raw_speech = read_wav('audio/courtroom.wav')
+raw_speech = read_wav('audio/audio.mp3')
 
 print("Transcribing using model from %s\n" % out_dir)
 
