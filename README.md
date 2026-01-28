@@ -35,14 +35,14 @@ uv run .\export_whisper.py
 uv run .\run_whisper.py
 
 # Output:
-# How are you doing today?
-# Elapsed time (CPU): 8.089 seconds
+# Oh, you think darkness is your ally? You merely adopted the dark. I was born in it. Molded by it. I didn't see the light until I was already a man. By then it was nothing to me but BLINDED!
+# Elapsed time (CPU): 12.612 seconds
 
-# How are you doing today?
-# Elapsed time (GPU): 1.194 seconds
+# Oh, you think darkness is your ally? You merely adopted the dark. I was born in it. Molded by it. I didn't see the light until I was already a man. By then it was nothing to me but BLINDED!
+# Elapsed time (GPU): 1.574 seconds
 
-# How are you doing today?
-# Elapsed time (AUTO): 0.744 seconds
+# Oh, you think darkness is your ally? You merely adopted the dark. I was born in it. Molded by it. I didn't see the light until I was already a man. By then it was nothing to me but BLINDED!
+# Elapsed time (AUTO): 1.429 seconds
 ```
 
 ### Alternate method to export Whisper model to OpenVINO IR format
