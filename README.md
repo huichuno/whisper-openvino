@@ -48,6 +48,10 @@ uv run .\run_whisper.py
 ### Alternate method to export Whisper model to OpenVINO IR format
 ```sh
 uv run optimum-cli export openvino --model openai/whisper-large-v3 models/openai/whisper-large-v3
+
+or
+
+uv run optimum-cli export openvino --model openai/whisper-large-v3 models/openai/whisper-large-v3 --weight-format fp16
 ```
 ## Reference
 * https://github.com/openvinotoolkit/openvino.genai/tree/master/samples/python/whisper_speech_recognition
